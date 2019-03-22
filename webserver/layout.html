@@ -1,0 +1,10 @@
+<h1>{{.Name}}</h1>
+<ul>
+    {{range .Flavors}}
+        {{if .Eaten}}
+            <li style="color:red">{{.Name}}</li>
+        {{else}}
+            <li style="color:green">{{.Name}}</li>
+        {{end}}
+    {{end}}
+</ul>
